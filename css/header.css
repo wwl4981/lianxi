@@ -1,0 +1,156 @@
+
+/* 大屏导航开始 */
+.wx-header{
+	width: 100%;
+	height: 90px;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 999;
+	background-color: #fff;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, .3);
+	transition:0.3s;
+}
+.wx-header .wrap{
+	width:100%;
+	max-width: 1140px;
+	height:100%;
+	margin: 0 auto;
+}
+.wx-header .wrap .logo{
+	height:100%;
+	float: left;
+	margin-right: 65px;
+}
+.wx-header .wrap .logo a{
+	display: block;
+	height:100%;
+	line-height: 90px;
+}
+.wx-header .wrap .logo a img{
+	display:inline-block;
+	vertical-align: middle;
+}
+.wx-header .wrap .nav{
+	float:left;
+	height:100%;
+}
+.wx-header .wrap .nav li{
+	float:left;
+	width:100px;
+	margin-right: 10px;
+}
+.wx-header .wrap .nav li a{
+	display:inline-block;
+	width:100%;
+	height:100%;
+	text-align: center;
+	line-height:90px;
+	color: #999;
+	font-size: 16px;
+	border-bottom: 3px solid #transparent;
+}
+.wx-header .wrap .nav li .active{
+	border-bottom: 3px solid #E4392A;
+	color:#E4392A;
+}
+.wx-header .wrap .nav li a:hover{
+	border-bottom: 3px solid #E4392A;
+	color:#E4392A;
+}
+.wx-header .wrap .tel{
+	float:right;
+	background: url(../img/header-img/tel_bg.png) no-repeat left center;
+	line-height: 90px;
+    float: right;
+    padding-left: 37px;
+    color: #e4392a;
+    font-size: 18px; 
+
+}
+/* 大屏导航结束 */
+
+
+/* 小屏导航开始 */
+
+.wx-smheader{
+	height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    display:none;
+}
+.wx-smheader .logo{
+	display:block;
+	float:left;
+	height:100%;
+}
+.wx-smheader .logo img{
+	height: 40px;
+    padding: 10px 0 0 10px;
+    box-sizing: border-box;
+}
+.wx-smheader .menu{
+	position: absolute;
+    top: 0;
+    right: 10px;
+    width: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+    cursor: pointer;
+    background: url(../img/header-img/menu_add.png) center center no-repeat;
+    -webkit-background-size: 50px;
+    background-size: 25px;
+    height: 50px;
+}
+.wx-smheader .sm-nav{
+	width:100%;
+	z-index: 60;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    left: 0;
+    background: url(../img/header-img/alpha_black_70.png) repeat;
+    text-align: center;
+    display:none;
+}
+.wx-smheader .sm-nav li{
+	border-bottom: 1px solid #565656;
+}
+.wx-smheader .sm-nav li a{
+	display:block;
+	height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+.wx-smheader .sm-nav li a:hover{
+	color:#E4392A;
+}
+/* 小屏导航结束 */
+
+
+/* 响应式 */
+@media screen and (max-width:1169px){
+	.wx-header .wrap .logo{
+		margin-right:0;
+	}
+	.wx-header .wrap .tel{
+		float:left;
+	}
+}    
+
+@media screen and (max-width:1068px){
+	.wx-smheader{
+		display:block;
+	}
+	.wx-header{
+		display:none;
+	}
+}    
